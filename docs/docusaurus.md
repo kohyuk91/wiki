@@ -4,6 +4,7 @@ sidebar_position: 88
 ---
 
 ## Doc Only Layout
+
 ```js title="docusaurus.config.js"
 const config = {
   // ...
@@ -26,4 +27,17 @@ const config = {
   ],
   // ...
 };
+```
+
+
+## Deploying to GitHub Pages
+
+### Bash
+```bash
+GIT_USER=kohyuk91 yarn deploy
+```
+
+### Batch
+```batch
+cmd /C "set "GIT_USER=kohyuk91" && yarn deploy"
 ```
