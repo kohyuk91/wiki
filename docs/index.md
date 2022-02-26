@@ -1,4 +1,4 @@
 ---
-title: Home
+title: Welcome
 sidebar_position: 1
 ---

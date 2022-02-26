@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
+  title: 'Wiki',
   tagline: 'Dinosaurs are cool',
   url: 'https://github.com',
   baseUrl: '/wiki/',
@@ -25,16 +25,8 @@ const config = {
         docs: {
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: false,
-        // blog: {
-        //   showReadingTime: true,
-        //   // Please change this to your repo.
-        //   editUrl:
-        //     'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        // },
         pages: false,
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -46,8 +38,26 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      hideableSidebar: true,
+      colorMode: {
+        defaultMode: 'dark',
+        disableSwitch: true,
+        respectPrefersColorScheme: true,
+        switchConfig: {
+          darkIcon: '🌙',
+          lightIcon: '\u2600',
+          // React inline style object
+          // see https://reactjs.org/docs/dom-elements.html#style
+          darkIconStyle: {
+            marginLeft: '2px',
+          },
+          lightIconStyle: {
+            marginLeft: '1px',
+          },
+        },
+      },
       navbar: {
-        title: 'WIKI',
+        title: 'Wiki',
         // logo: {
         //   alt: 'My Site Logo',
         //   src: 'img/logo.svg',
